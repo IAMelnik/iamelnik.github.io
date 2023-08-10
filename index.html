@@ -1,21 +1,45 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>HTML Страница с черным стилем</title>
-    <style>
-        body {
-            background-color: black;
-            color: white;
-        }
-    </style>
+    <title>Bootstrap Example</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 </head>
 <body>
-
-<h1>Пример HTML страницы с черным стилем</h1>
-<p>Это пример страницы с черным фоном и белым текстом.</p>
-
+    <div class="container">
+        <h1>Hello, Bootstrap!</h1>
+        <p>This is an example of using Bootstrap to style a webpage.</p>
+        
+        <div class="alert alert-primary" role="alert">
+            This is a primary alert—check it out!
+        </div>
+        
+        <button type="button" class="btn btn-success">Success Button</button>
+        <button type="button" class="btn btn-danger">Danger Button</button>
+        
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>John Doe</td>
+                    <td>john@example.com</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Jane Smith</td>
+                    <td>jane@example.com</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 </body>
 </html>
-
-
-
