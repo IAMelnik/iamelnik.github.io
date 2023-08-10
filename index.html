@@ -2,12 +2,12 @@
 <html>
 <head>
     <title>Dark Mode Example</title>
-    <link id="theme" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link id="theme" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap-dark.min.css">
 </head>
 <body>
     <div class="container">
         <h1>Hello, Dark Mode Example!</h1>
-        <p>This is an example of adding a dark mode theme to a webpage.</p>
+        <p>This is an example of a webpage with a dark mode theme.</p>
         
         <div class="alert alert-primary" role="alert">
             This is a primary alert—check it out!
@@ -37,24 +37,9 @@
                 </tr>
             </tbody>
         </table>
-        
-        <div class="custom-control custom-switch">
-            <input type="checkbox" class="custom-control-input" id="darkModeSwitch" onchange="toggleDarkMode()">
-            <label class="custom-control-label" for="darkModeSwitch">Dark Mode</label>
-        </div>
     </div>
     
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-    <script>
-        function toggleDarkMode() {
-            var themeLink = document.getElementById('theme');
-            if (themeLink.getAttribute('href') === 'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css') {
-                themeLink.setAttribute('href', 'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap-dark.min.css');
-            } else {
-                themeLink.setAttribute('href', 'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css');
-            }
-        }
-    </script>
 </body>
 </html>
