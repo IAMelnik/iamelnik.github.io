@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Bootstrap Example</title>
+    <title>JavaScript and Bootstrap Example</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 </head>
 <body>
     <div class="container">
-        <h1>Hello, Bootstrap!</h1>
-        <p>This is an example of using Bootstrap to style a webpage.</p>
+        <h1 id="greeting">Hello, JavaScript and Bootstrap!</h1>
+        <p>This is an example of using JavaScript to update content on a Bootstrap-styled webpage.</p>
         
         <div class="alert alert-primary" role="alert">
             This is a primary alert—check it out!
         </div>
         
-        <button type="button" class="btn btn-success">Success Button</button>
-        <button type="button" class="btn btn-danger">Danger Button</button>
+        <button type="button" class="btn btn-success" onclick="changeText('Success Button Clicked!')">Success Button</button>
+        <button type="button" class="btn btn-danger" onclick="changeText('Danger Button Clicked!')">Danger Button</button>
         
         <table class="table">
             <thead>
@@ -41,5 +41,10 @@
     
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script>
+        function changeText(message) {
+            document.getElementById('greeting').textContent = message;
+        }
+    </script>
 </body>
 </html>
